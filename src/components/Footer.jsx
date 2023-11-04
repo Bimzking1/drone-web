@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
 
             <div className='md:w-1/4 lg:w-1/5 py-2 px-2'>
-                <div className='font-bold'>
+                <div className='font-bold text-xl mb-2'>
                     Services
                 </div>
                 <div className='md:py-1'>
@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
 
             <div className='md:w-1/4 lg:w-1/5 py-2 px-2'>
-                <div className='font-bold'>
+                <div className='font-bold text-xl mb-2'>
                     Discover
                 </div>
                 <div className='md:py-1'>
@@ -75,7 +75,7 @@ const Footer = () => {
             </div>
 
             <div className='md:w-1/4 lg:w-1/5 py-2 px-2'>
-                <div className='font-bold'>
+                <div className='font-bold text-xl mb-2'>
                     Products
                 </div>
                 <div className='md:py-1'>
@@ -90,30 +90,30 @@ const Footer = () => {
             </div>
 
         </div>
-        <hr/>
-        <div className='text-center md:flex gap-8 text-xs my-4 lg:px-4'>
+        <hr className='mt-8'/>
+        <div className='text-center md:flex gap-8 text-xs mt-8 lg:px-4'>
             <div className='mb-2'>
                 © DroNeeds 2023. All Rights Reserved
             </div>
-            <div className='font-bold mb-2 hidden md-block'>
+            <div className='font-bold mb-2 hidden md:block'>
                 About Us
             </div>
-            <div className='font-bold mb-2'>
+            <div className='font-bold mb-2 hidden md:block'>
                 User Agreement
             </div>
-            <div className='font-bold mb-2'>
+            <div className='font-bold mb-2 hidden md:block'>
                 Privacy Policy
             </div>
-            <div className='font-bold mb-2'>
+            <div className='font-bold mb-2 hidden md:block'>
                 Terms of Services
             </div>
-            <div className='font-bold mb-2'>
+            <div className='font-bold mb-2 hidden md:block'>
                 Cookie Policy
             </div>
-            <div className='font-bold mb-2'>
+            <div className='font-bold mb-2 hidden md:block'>
                 Copyright Policy
             </div>
-            <div className='font-bold mb-2'>
+            <div className='font-bold mb-2 hidden md:block'>
                 Brand Policy
             </div>
         </div>

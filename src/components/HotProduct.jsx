@@ -18,7 +18,7 @@ const HotProduct = () => {
               />
             </Link>
             <div className='w-full md:w-1/2 px-8 text-center md:text-left'>
-                <div className='text-3xl font-bold'>Dji Mavic 3 Pro</div>
+                <div className='text-3xl font-bold'>DJI Mavic 3 Pro</div>
                 <div className='my-4 font-semibold'>Specifications</div>
                 <div className='mt-4 font-semibold'>Weight</div>
                 <div className=''>956 g</div>

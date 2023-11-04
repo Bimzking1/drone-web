@@ -82,17 +82,16 @@ const Products = () => {
                         <div className='text-4xl font-semibold mt-8'>
                             Our Products
                         </div>
-                        <div className='my-4 w-full mx-8 flex flex-col'>
-                            <Link to='/' className='w-fit flex items-center hover:bg-gray-300 py-2 px-4 rounded-full'>
-                                <div className='bg-white rounded-full'>
-                                    <RiArrowGoBackFill className='h-[30px] w-[30px] m-2'/>
+                        <div className='my-4 w-full flex gap-2'>
+                            <Link to='/' className='w-fit flex items-center rounded-full'>
+                                <div className='bg-white rounded-full hover:bg-gray-300 duration-300'>
+                                    <RiArrowGoBackFill className='h-[40px] w-[40px] m-2'/>
                                 </div>
-                                <div className='text-2xl font-semibold ml-4'>Home</div>
                             </Link>
                             <input
-                                className="text-gray-800 font-semibold text-xl bg-white w-full py-4 pl-8 md:px-8 my-4 rounded-3xl"
+                                className="text-gray-800 font-semibold text-xl bg-gray-200 w-full py-4 pl-8 md:px-8 my-4 rounded-3xl"
                                 type="search"
-                                placeholder="Search something ..."
+                                placeholder="Search product ..."
                                 onChange={filterBySearch}
                             />
                         </div>
