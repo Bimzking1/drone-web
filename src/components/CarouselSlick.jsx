@@ -48,6 +48,34 @@ const CarouselSlick = () => {
       name: 'BetaFPV Cetus Pro Kit',
     },
   ];
+
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={`${className} bg-gray-500 rounded-full`}
+        style={{ 
+          ...style, 
+          display: "block", 
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={`${className} bg-gray-500 rounded-full`}
+        style={{ 
+          ...style,
+        }}
+        onClick={onClick}
+      />
+    );
+  }
+
     const settings = {
       className: "center m-4 p-4",
       centerMode: true,
@@ -56,6 +84,9 @@ const CarouselSlick = () => {
       slidesToShow: 4,
       speed: 500,
       autoplay: true,
+      nextArrow: <SampleNextArrow />,
+      prevArrow: <SamplePrevArrow />,
+      dots: true,
       responsive: [
         {
           breakpoint: 1280,
@@ -71,40 +102,43 @@ const CarouselSlick = () => {
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
+            dots: true
           }
         },
         {
           breakpoint: 800,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToScroll: 2,
+            dots: true
           }
         },
         {
           breakpoint: 600,
           settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            dots: true
           }
         }
       ]
     };
   return (
-    <div className='w-full xl:w-[1280px] bg-green-500 my-16'>
+    <div className='w-full xl:w-[1280px] my-16'>
       <div className='text-center text-5xl font-semibold mb-16'>
         Our Products
       </div>
       <Slider {...settings} className='w-full'>
         {slides.map((slide) => {
           return(
-            <div className='flex flex=col items-center justify-center bg-blue-300'>
+            <div className='flex flex=col items-center justify-center'>
               <div
                   className='mx-4 text-center'>
                 <img
                   src={slide.url}
                 />
               </div>
-              <div className='bg-red-500 text-center my-4 text-xl font-semibold mx-8'>
+              <div className='text-center my-4 text-xl font-semibold mx-8'>
                 {slide.name}
               </div>
             </div>

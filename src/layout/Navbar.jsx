@@ -17,13 +17,6 @@ const Navbar = () => {
     };
   }, []);
   
-  let Links =[
-    {name:"HOME",link:"/"},
-    {name:"PRODUCTS",link:"/"},
-    {name:"ABOUT US",link:"/"},
-    {name:"CONTACT US",link:"/"},
-  ];
-  
   let [open, setOpen] = useState(false);
   
   const openNavbar = () => {
@@ -44,7 +37,7 @@ const Navbar = () => {
       style={{
         backgroundColor: navColor,
         height: navSize,
-        transition: '1s ease-in',
+        transition: '1s ease-in'
       }}
     >
       <div className='w-full xl:w-[1280px]'>
@@ -63,27 +56,34 @@ const Navbar = () => {
               }
           </div>
 
-          {/* linke items */}
-          <ul 
+          {/* Linked items */}
+          <div 
             className={`
               md:flex md:items-center md:pb-0 pb-12 absolute md:static 
               md:z-auto z-[-1] left-0 w-full z-10
-              md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in
+              md:w-auto md:pl-0 px-8
               ${open ? 'top-12' : 'top-[-490px]'}
             `}
             style={{
               backgroundColor: navColor,
-              transition: '1s ease-in',
+              transition: '1s ease-in'
             }}
           >
-            {
-                Links.map((link) => (
-                <li className='md:ml-8 md:my-0 my-7 font-semibold'>
-                    <a href={link.link} className='text-gray-800 hover:text-blue-400 duration-500'>{link.name}</a>
-                </li>))
-            }
-            <button className='btn bg-blue-600 text-white md:ml-8 font-semibold px-3 py-1 rounded duration-500 md:static'>Get Started</button>
-          </ul>
+            <div className='text-xl mt-6 md:items-center md:text-center md:gap-4 flex flex-col md:flex-row md:ml-8 md:my-0 font-semibold'>
+                <a href="#" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full py-2 px-4 md:px-4 mb-2 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
+                  HOME
+                </a>
+                <a href="#" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full py-2 px-4 md:px-4 mb-2 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
+                  PRODUCTS
+                </a>
+                <a href="#" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full py-2 px-4 md:px-4 mb-2 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
+                  ABOUT US
+                </a>
+                <a href="#" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full px-4 py-2 md:px-4 mb-2 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
+                  CONTACT US
+                </a>
+            </div>
+          </div>
           
         </div>
       </div>

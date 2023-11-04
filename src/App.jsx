@@ -6,7 +6,7 @@ import './index.css'
 
 function App() {
   return (
-    <div className='bg-lime-500 w-full'>
+    <div className='w-full'>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

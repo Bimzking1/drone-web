@@ -1,6 +1,6 @@
 .element {
     height: auto;
-    width: 400px;
+    width: auto;
     animation: 
       nudge 5s linear infinite alternate;
   }

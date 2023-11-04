@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from '../layout/Navbar'
 import Footer from '../layout/Footer'
-import CarouselDefault from './CarouselDefault'
 import HotProduct from './HotProduct'
 import CarouselSlick from './CarouselSlick'
 import AboutUs from './AboutUs'
+import HotFeature from './HotFeature'
 
 const Home = () => {
   return (
@@ -35,20 +35,20 @@ const Home = () => {
             </div>
         </div>
         
-        <div className='my-16 w-full flex items-center justify-center'>
+        <div className='bg-gray-100 py-16 w-full flex items-center justify-center'>
             <HotProduct/>
         </div>
         
-        <div className='bg-orange-500 w-full flex items-center justify-center'>
+        <div className='bg-gray-800 w-full flex items-center justify-center'>
             <AboutUs/>
         </div>
         
-        {/* <div className='w-full flex items-center justify-center'>
-            <CarouselDefault/>
-        </div> */}
-        
-        <div className='bg-orange-500 w-full flex items-center justify-center'>
+        <div className='bg-gray-100 w-full flex items-center justify-center'>
             <CarouselSlick/>
+        </div>
+        
+        <div className='bg-gray-100 w-full flex items-center justify-center'>
+            <HotFeature/>
         </div>
 
         <Footer className='z-50'/>
