@@ -11,7 +11,7 @@ const AboutUs = () => {
         </div>
         <div className=''>
             <div className='flex'>
-                <div className='w-2/3'>
+                <div className='mr-16'>
                     <div className=''>
                         We Give The Best Drone Solutions
                     </div>
@@ -23,7 +23,7 @@ const AboutUs = () => {
                         with their needs of drones.
                     </div>
                 </div>
-                <div className='w-1/3'>
+                <div className='w-[800px]'>
                     <img
                         src={Drone1} 
                         className={`w-full`}
