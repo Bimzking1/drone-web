@@ -8,6 +8,7 @@ export default {
     extend: {
       backgroundImage:{
         'fog': "url('./src/assets/fog.jpg')",
+        'rocky': "url('./src/assets/rockybeach.jpg')",
       }
     },
   },

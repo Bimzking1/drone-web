@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './style/style.module.css'
 import DjiAvata from './../assets/mavic3pro.png'
+import { Link } from 'react-router-dom'
 
 const HotProduct = () => {
   return (
@@ -9,13 +10,13 @@ const HotProduct = () => {
             New Arrival
         </div>
         <div className='flex flex-col md:flex-row items-center justify-center'>
-            <div className='w-full p-8'>
+            <Link to='/products' className='w-full p-8'>
               <img 
                 src={DjiAvata} 
                 className={`${style.element} w-full`}
                 alt="logo" 
               />
-            </div>
+            </Link>
             <div className='w-full md:w-1/2 px-8 text-center md:text-left'>
                 <div className='text-3xl font-bold'>Dji Mavic 3 Pro</div>
                 <div className='my-4 font-semibold'>Specifications</div>

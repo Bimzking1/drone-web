@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Products from "./pages/Products";
 import Layout from "./layout/Layout";
 import './index.css'
 
@@ -10,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          {/* <Route path="/organization" element={<HomeOrganization />} /> */}
+          <Route path="/products" element={<Products />} />
         </Route>
       </Routes>
     </div>

@@ -1,9 +1,13 @@
 import React from 'react'
 import video from "./../assets/citysky.mp4";
+import { Link } from 'react-router-dom';
 
 const HotFeature = () => {
   return (
     <div className='w-full xl:w-[1280px] flex flex-col items-center mb-8'>
+        <Link to="/products" className='mb-8 text-2xl bg-gray-700 text-gray-100 hover:text-gray-800 hover:bg-gray-300 duration-300 px-8 py-4 rounded-full'>
+            See more products
+        </Link>
         <div className='flex flex-col md:flex-row items-center justify-center'>
             <div className='w-fit p-8'>
                 <video 

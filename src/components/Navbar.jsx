@@ -3,6 +3,7 @@ import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
 import DroNeeds from './../assets/DroNeeds.svg'
 import DroNeedsMirror from './../assets/DroNeeds_Mirror.svg'
 import style from './../components/style/style.module.css'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [navSize, setnavSize] = useState("auto");
@@ -36,7 +37,7 @@ const Navbar = () => {
   
   return (
     <div
-      className='w-full fixed flex items-center justify-center z-50'
+      className='shadow w-full fixed flex items-center justify-center z-50'
       style={{
         backgroundColor: navColor,
         height: navSize,
@@ -48,10 +49,10 @@ const Navbar = () => {
 
           {/* Logo */}
           <div onClick={()=>openNavbar()} className='font-bold text-2xl cursor-pointer flex items-center gap-2 z-50'>
-            <a href="#home" className={`${style.card}`}>
+            <Link to="/" className={`${style.card}`}>
               <img src={DroNeeds} className='h-[40px]' alt="Logo Back"/>
               <img src={DroNeedsMirror} className={`${style.imgTop} h-[40px]`} alt="Logo Front"/>
-            </a>
+            </Link>
           </div>
 
           {/* Menu icon */}

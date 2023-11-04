@@ -2,7 +2,7 @@ import React from 'react'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
 const CarouselSlick = () => {
   const slides = [
@@ -129,9 +129,9 @@ const CarouselSlick = () => {
         Our Products
       </div>
       <Slider {...settings} className='w-full'>
-        {slides.map((slide) => {
+        {slides.map((slide, index) => {
           return(
-            <div className='flex flex=col items-center justify-center'>
+            <Link to='/products' key={index} className='flex flex=col items-center justify-center'>
               <div
                   className='mx-4 text-center'>
                 <img
@@ -141,7 +141,7 @@ const CarouselSlick = () => {
               <div className='text-center my-4 text-xl font-semibold mx-8'>
                 {slide.name}
               </div>
-            </div>
+            </Link>
           )
         })}
       </Slider>

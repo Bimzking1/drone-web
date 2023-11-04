@@ -86,7 +86,7 @@ const ContactUs = () => {
                     Or visit our social media platform
                 </div>
                 <div className='flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16'>
-                    <div className='hover:bg-gray-200 duration-300 flex items-center justify-center bg-white px-8 py-4 rounded-full'>
+                    <a href='https://wa.me/6287840758430' target="_blank" className='hover:bg-gray-200 duration-300 flex items-center justify-center bg-white px-8 py-4 rounded-full'>
                         <div className='w-[60px]'>
                             <img
                                 src={WhatsApp}
@@ -96,8 +96,8 @@ const ContactUs = () => {
                         <div className='ml-4 text-2xl font-semibold'>
                             WhatsApp
                         </div>
-                    </div>
-                    <div className='hover:bg-gray-200 duration-300 flex items-center justify-center bg-white px-8 py-4 rounded-full'>
+                    </a>
+                    <a href='https:instagram.com/' target="_blank" className='hover:bg-gray-200 duration-300 flex items-center justify-center bg-white px-8 py-4 rounded-full'>
                         <div className='w-[60px]'>
                             <img
                                 src={Instagram}
@@ -107,7 +107,7 @@ const ContactUs = () => {
                         <div className='ml-4 text-2xl font-semibold'>
                             Instagram
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
             <ToastContainer />
