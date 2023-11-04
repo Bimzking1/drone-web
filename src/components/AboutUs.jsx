@@ -1,7 +1,7 @@
 import React from 'react'
-import Drone1 from './../../public/drone1.jpg'
-import Drone2 from './../../public/drone2.jpg'
-import Drone3 from './../../public/drone3.jpg'
+import Drone1 from './../assets/drone1.jpg'
+import Drone2 from './../assets/drone2.jpg'
+import Drone3 from './../assets/drone3.jpg'
 
 const AboutUs = () => {
   return (

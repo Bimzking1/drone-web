@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from '../layout/Navbar'
-import Footer from '../layout/Footer'
-import HotProduct from './HotProduct'
-import CarouselSlick from './CarouselSlick'
-import AboutUs from './AboutUs'
-import HotFeature from './HotFeature'
-import ContactUs from './ContactUs'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import HotProduct from '../components/HotProduct'
+import CarouselSlick from '../components/CarouselSlick'
+import AboutUs from '../components/AboutUs'
+import HotFeature from '../components/HotFeature'
+import ContactUs from '../components/ContactUs'
 
 const Home = () => {
   return (

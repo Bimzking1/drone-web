@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './style/style.module.css'
-import DjiAvata from './../../public/mavic3pro.png'
+import DjiAvata from './../assets/mavic3pro.png'
 
 const HotProduct = () => {
   return (

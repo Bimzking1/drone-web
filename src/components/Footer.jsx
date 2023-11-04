@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { BsFacebook } from 'react-icons/bs';
 import { AiOutlineYoutube } from 'react-icons/ai';
-import DroNeedsWhite from './../../public/DroNeeds_White.svg'
+import DroNeedsWhite from './../assets/DroNeeds_White.svg'
 
 const Footer = () => {
   return (

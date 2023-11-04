@@ -2,9 +2,9 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Seabed from './../../public/seabed.jpg'
-import WhatsApp from './../../public/whatsapp.png'
-import Instagram from './../../public/instagram.svg'
+import Seabed from './../assets/seabed.jpg'
+import WhatsApp from './../assets/whatsapp.png'
+import Instagram from './../assets/instagram.svg'
 
 const ContactUs = () => {
     const form = useRef();

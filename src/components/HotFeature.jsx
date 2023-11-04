@@ -1,5 +1,5 @@
 import React from 'react'
-import video from "./../../public/citysky.mp4";
+import video from "./../assets/citysky.mp4";
 
 const HotFeature = () => {
   return (

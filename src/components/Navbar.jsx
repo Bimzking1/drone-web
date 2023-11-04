@@ -1,9 +1,7 @@
 import React, { useState, useEffect }  from 'react'
-import { PaperAirplaneIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
-import DroNeeds from './../../public/DroNeeds.svg'
-import DroNeedsCircle from './../../public/DroNeeds_Logo.svg'
-import DroNeedsText from './../../public/DroNeeds_Text.svg'
-import DroNeedsMirror from './../../public/DroNeeds_Mirror.svg'
+import { Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
+import DroNeeds from './../assets/DroNeeds.svg'
+import DroNeedsMirror from './../assets/DroNeeds_Mirror.svg'
 import style from './../components/style/style.module.css'
 
 const Navbar = () => {

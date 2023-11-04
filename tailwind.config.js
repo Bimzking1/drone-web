@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        'fog': "url('/fog.jpg')",
+        'fog': "url('./src/assets/fog.jpg')",
       }
     },
   },
