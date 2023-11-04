@@ -4,16 +4,18 @@ import DjiAvata from './../../public/mavic3pro.png'
 
 const HotProduct = () => {
   return (
-    <div className='w-full xl:w-[1280px] flex flex-col items-center'>
+    <div className='bg-orange-500 w-full xl:w-[1280px] flex flex-col items-center'>
         <div className='text-5xl font-semibold mb-16'>
             New Arrival
         </div>
         <div className='flex flex-col md:flex-row items-center justify-center'>
-            <img 
-              src={DjiAvata} 
-              className={`${style.element} w-full bg-red-500`}
-              alt="logo" 
-            />
+            <div className='p-8'>
+              <img 
+                src={DjiAvata} 
+                className={`${style.element} w-full bg-red-500`}
+                alt="logo" 
+              />
+            </div>
             <div className='bg-green-500'>
                 <div className='text-3xl font-bold'>Dji Mavic 3 Pro</div>
                 <div className='my-4 font-semibold'>Specifications</div>
