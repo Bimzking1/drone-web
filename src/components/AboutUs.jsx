@@ -23,7 +23,7 @@ const AboutUs = () => {
                         with their needs of drones.
                     </div>
                 </div>
-                <div className='w-[1200px]'>
+                <div className=''>
                     <img
                         src={Drone1} 
                         className={`w-full`}
@@ -31,7 +31,7 @@ const AboutUs = () => {
                     />
                 </div>
             </div>
-            <div className=''>
+            <div className='flex'>
                 <div className=''>
                     <img 
                         src={Drone2} 
@@ -52,7 +52,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <div className=''>
+            <div className='flex'>
                 <div className=''>
                     <div className=''>
                         Specializing In Drone Advanced Technology

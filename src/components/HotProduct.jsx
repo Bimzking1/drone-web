@@ -11,10 +11,10 @@ const HotProduct = () => {
         <div className='flex flex-col md:flex-row items-center justify-center'>
             <img 
               src={DjiAvata} 
-              className={`${style.element} w-1/2`}
+              className={`${style.element} w-full bg-red-500`}
               alt="logo" 
             />
-            <div className='w-[600px] bg-green-500'>
+            <div className='bg-green-500'>
                 <div className='text-3xl font-bold'>Dji Mavic 3 Pro</div>
                 <div className='my-4 font-semibold'>Specifications</div>
                 <div className='mt-4 font-semibold'>Weight</div>
