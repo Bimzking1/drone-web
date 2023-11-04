@@ -49,7 +49,7 @@ const Navbar = () => {
         <div className='w-full md:flex items-center justify-between py-4 md:px-10 px-7'>
 
           {/* Logo */}
-          <div className='font-bold text-2xl cursor-pointer flex items-center gap-2 z-50'>
+          <div onClick={()=>openNavbar()} className='font-bold text-2xl cursor-pointer flex items-center gap-2 z-50'>
             <a href="#home" className={`${style.card}`}>
               <img src={DroNeeds} className='h-[40px]' alt="Logo Back"/>
               <img src={DroNeedsMirror} className={`${style.imgTop} h-[40px]`} alt="Logo Front"/>
@@ -66,10 +66,10 @@ const Navbar = () => {
           {/* Linked items */}
           <div 
             className={`
-              md:flex md:items-center md:pb-0 pb-12 absolute md:static 
-              md:z-auto z-[-1] left-0 w-full z-10
+              md:flex md:items-center md:pb-0 pb-4 absolute md:static 
+              left-0 w-full z-0
               md:w-auto md:pl-0 px-8
-              ${open ? 'top-12' : 'top-[-490px]'}
+              ${open ? 'top-16' : 'top-[-490px]'}
             `}
             style={{
               backgroundColor: navColor,
@@ -86,10 +86,11 @@ const Navbar = () => {
                 <a href="#aboutus" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full py-2 px-4 md:px-4 mb-2 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
                   ABOUT US
                 </a>
-                <a href="#contactus" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full px-4 py-2 md:px-4 mb-2 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
+                <a href="#contactus" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full px-4 py-2 md:px-4 mb-4 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
                   CONTACT US
                 </a>
             </div>
+            <hr/>
           </div>
           
         </div>

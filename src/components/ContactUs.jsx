@@ -62,11 +62,11 @@ const ContactUs = () => {
                         className='flex flex-col text-gray-100'
                     >
                         <label className='py-2'>Name</label>
-                        <input className='py-2 px-4 rounded-xl' type="text" required name="from_name" placeholder="Type your name here"/>
+                        <input className='py-2 px-4 rounded-xl text-gray-800 font-semibold' type="text" required name="from_name" placeholder="Type your name here"/>
                         <label className='py-2'>Email</label>
-                        <input className='py-2 px-4 rounded-xl' type="email" required name="user_email" placeholder="Type your email here"/>
+                        <input className='py-2 px-4 rounded-xl text-gray-800 font-semibold' type="email" required name="user_email" placeholder="Type your email here"/>
                         <label className='py-2'>Message</label>
-                        <textarea className='py-2 px-4 h-[150px] rounded-xl' required name="message" placeholder="Type your message here"/>
+                        <textarea className='py-2 px-4 h-[150px] rounded-xl text-gray-800' required name="message" placeholder="Type your message here"/>
                         <div className='flex items-center justify-center md:justify-start'>
                             <button className='font-semibold text-dark-100 hover:text-gray-800 mt-8 py-4 w-fit px-8 md:px-16 rounded-full bg-gray-500 hover:bg-gray-300 duration-300' type="submit" value="Send">
                                 Send Message
