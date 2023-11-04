@@ -1,0 +1,20 @@
+.element {
+    height: auto;
+    width: 400px;
+    animation: 
+      nudge 5s linear infinite alternate;
+  }
+  
+  @keyframes nudge {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    
+    50% {
+      transform: translate(30px, 0);
+    }
+    
+    80% {
+      transform: translate(-70px, 0);
+    }
+  }
