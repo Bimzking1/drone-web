@@ -54,7 +54,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-col mt-16 lg:mt-8'>
+            <div className='flex flex-col mt-8'>
                 <div className=''>
                     <div className='text-4xl font-semibold'>
                         We Are Focused to Our Core Values

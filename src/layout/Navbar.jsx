@@ -1,5 +1,10 @@
 import React, { useState, useEffect }  from 'react'
 import { PaperAirplaneIcon, Bars3BottomRightIcon, XMarkIcon } from '@heroicons/react/24/solid'
+import DroNeeds from './../../public/DroNeeds.svg'
+import DroNeedsCircle from './../../public/DroNeeds_Logo.svg'
+import DroNeedsText from './../../public/DroNeeds_Text.svg'
+import DroNeedsMirror from './../../public/DroNeeds_Mirror.svg'
+import style from './../components/style/style.module.css'
 
 const Navbar = () => {
   const [navSize, setnavSize] = useState("auto");
@@ -45,15 +50,17 @@ const Navbar = () => {
 
           {/* Logo */}
           <div className='font-bold text-2xl cursor-pointer flex items-center gap-2 z-50'>
-              <PaperAirplaneIcon className='w-7 h-7 text-green-600'/>
-              <div className='hover:text-3xl duration-500'>DroNeeds</div>
+            <a href="#home" className={`${style.card}`}>
+              <img src={DroNeeds} className='h-[40px]' alt="Logo Back"/>
+              <img src={DroNeedsMirror} className={`${style.imgTop} h-[40px]`} alt="Logo Front"/>
+            </a>
           </div>
 
           {/* Menu icon */}
           <div onClick={()=>openNavbar()} className='absolute right-8 top-5 cursor-pointer md:hidden w-7 h-7'>
-              {
-                  open ? <XMarkIcon/> : <Bars3BottomRightIcon />
-              }
+            {
+              open ? <XMarkIcon/> : <Bars3BottomRightIcon />
+            }
           </div>
 
           {/* Linked items */}
@@ -70,16 +77,16 @@ const Navbar = () => {
             }}
           >
             <div className='text-xl mt-6 md:items-center md:text-center md:gap-4 flex flex-col md:flex-row md:ml-8 md:my-0 font-semibold'>
-                <a href="#" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full py-2 px-4 md:px-4 mb-2 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
+                <a href="#home" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full py-2 px-4 md:px-4 mb-2 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
                   HOME
                 </a>
-                <a href="#" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full py-2 px-4 md:px-4 mb-2 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
+                <a href="#products" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full py-2 px-4 md:px-4 mb-2 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
                   PRODUCTS
                 </a>
-                <a href="#" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full py-2 px-4 md:px-4 mb-2 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
+                <a href="#aboutus" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full py-2 px-4 md:px-4 mb-2 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
                   ABOUT US
                 </a>
-                <a href="#" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full px-4 py-2 md:px-4 mb-2 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
+                <a href="#contactus" className='hover:bg-gray-200 md:hover:bg-gray-100 rounded-full px-4 py-2 md:px-4 mb-2 md:mb-0 text-gray-800 hover:text-blue-400 duration-500'>
                   CONTACT US
                 </a>
             </div>

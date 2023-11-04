@@ -5,10 +5,12 @@ import HotProduct from './HotProduct'
 import CarouselSlick from './CarouselSlick'
 import AboutUs from './AboutUs'
 import HotFeature from './HotFeature'
+import ContactUs from './ContactUs'
 
 const Home = () => {
   return (
-    <>
+    <>  
+        <div id="home"></div>
         <Navbar className='z-50 top-0'/>
 
         <div className='flex w-full flex-col justify-center z-0'>
@@ -39,16 +41,20 @@ const Home = () => {
             <HotProduct/>
         </div>
         
-        <div className='bg-gray-800 w-full flex items-center justify-center'>
+        <div id="aboutus" className='bg-gray-800 w-full flex items-center justify-center'>
             <AboutUs/>
         </div>
         
-        <div className='bg-gray-100 w-full flex items-center justify-center'>
+        <div id="products" className='bg-gray-100 w-full flex items-center justify-center'>
             <CarouselSlick/>
         </div>
         
         <div className='bg-gray-100 w-full flex items-center justify-center'>
             <HotFeature/>
+        </div>
+        
+        <div id="contactus" className='bg-gray-100 w-full flex items-center justify-center'>
+            <ContactUs/>
         </div>
 
         <Footer className='z-50'/>
