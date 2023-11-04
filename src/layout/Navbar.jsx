@@ -24,8 +24,7 @@ const Navbar = () => {
     ];
     let [open, setOpen] =useState(false);
   
-  return (    
-    // <div className='shadow-md w-screen fixed top-0'>
+  return (
     <div
       className='w-full fixed flex items-center justify-center z-50'
       style={{
@@ -35,19 +34,12 @@ const Navbar = () => {
       }}
     >
       <div className='w-full xl:w-[1280px]'>
-        <div
-          className='md:flex items-center justify-between py-4 md:px-10 px-7'
-          // style={{
-          //   backgroundColor: navColor,
-          //   height: navSize,
-          //   transition: "all 1s"
-          // }}
-        >
+        <div className='md:flex items-center justify-between py-4 md:px-10 px-7'>
 
           {/* Logo */}
           <div className='font-bold text-2xl cursor-pointer flex items-center gap-2'>
               <PaperAirplaneIcon className='w-7 h-7 text-green-600'/>
-              <div className='hover:text-3xl'>DroNeeds</div>
+              <div className='hover:text-3xl duration-500'>DroNeeds</div>
           </div>
 
           {/* Menu icon */}

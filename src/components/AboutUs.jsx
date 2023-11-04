@@ -11,11 +11,11 @@ const AboutUs = () => {
         </div>
         <div className=''>
             <div className='flex'>
-                <div className='mr-16'>
-                    <div className=''>
+                <div className='mr-16 bg-red-300'>
+                    <div className='text-4xl font-semibold'>
                         We Give The Best Drone Solutions
                     </div>
-                    <div className=''>
+                    <div className='text-xl mt-8'>
                         We are a team of drone experts who wants help
                         our clients with the best solutions we can
                         offer. Established in 2013, we have 10 years
@@ -23,7 +23,7 @@ const AboutUs = () => {
                         with their needs of drones.
                     </div>
                 </div>
-                <div className='w-[800px]'>
+                <div className='w-[1200px]'>
                     <img
                         src={Drone1} 
                         className={`w-full`}
