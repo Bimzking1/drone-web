@@ -6,14 +6,14 @@ import './index.css'
 
 function App() {
   return (
-    <>
+    <div className='bg-lime-500 w-full'>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           {/* <Route path="/organization" element={<HomeOrganization />} /> */}
         </Route>
       </Routes>
-    </>
+    </div>
   )
 }
 

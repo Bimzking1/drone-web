@@ -4,7 +4,7 @@ import Footer from './Footer'
 
 const Layout = () => {
   return (
-    <div className={``}>
+    <div className={`overflow-hidden`}>
         <Main className='container min-h-screen'/>
         {/* <Footer/> */}
     </div>

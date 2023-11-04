@@ -40,7 +40,7 @@ const Navbar = () => {
   
   return (
     <div
-      className='w-screen fixed flex items-center justify-center z-50'
+      className='w-full fixed flex items-center justify-center z-50'
       style={{
         backgroundColor: navColor,
         height: navSize,
