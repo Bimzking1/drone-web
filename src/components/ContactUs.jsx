@@ -97,7 +97,7 @@ const ContactUs = () => {
                             WhatsApp
                         </div>
                     </a>
-                    <a href='https:instagram.com/' target="_blank" className='hover:bg-gray-200 duration-300 flex items-center justify-center bg-white px-8 py-4 rounded-full'>
+                    <a href='https://www.instagram.com/' target="_blank" className='hover:bg-gray-200 duration-300 flex items-center justify-center bg-white px-8 py-4 rounded-full'>
                         <div className='w-[60px]'>
                             <img
                                 src={Instagram}
